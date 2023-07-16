@@ -21,12 +21,16 @@ a {
   font-weight: 700;
   color: #131313;
 }
+section {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
 .des {
   color: #727272;
-  text-align: center;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 26px; /* 162.5% */
+  margin: 1rem 0;
 }
 .btn {
   border-radius: 8px;
@@ -77,12 +81,13 @@ nav li a {
   text-align: center;
   font-size: 3rem;
   font-weight: 700;
-  margin: 1.5 rem 0;
+  margin: 1.5rem 0;
   line-height: 1;
 }
 #home .des {
   width: 80%;
   margin: 0 auto;
+  text-align: center;
 }
 #home .btn {
   margin: 1.8rem auto;
@@ -92,14 +97,49 @@ nav li a {
   height: auto;
 }
 
+/* about styles */
+#about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  gap: 2rem;
+}
+.img-row {
+  display: flex;
+  gap: 1rem;
+}
+#about .about-img {
+  max-width: 250px;
+  height: auto;
+}
+.about-title {
+  font-size: 2.5rem;
+  padding-right: 2rem;
+  color: #727272;
+  font-weight: 400;
+}
+.about-title .first {
+  font-weight: 700;
+  color: #131313;
+}
+.about-title .sec {
+  font-weight: 700;
+  color: #ff900e;
+}
+
 @media screen and (max-width: 425px) {
   html {
     font-size: 14px;
   }
+  img {
+    max-width: 100%;
+  }
   header > * {
     width: 100%;
   }
-  nav {
+  nav,
+  #about {
     flex-direction: column;
     gap: 1rem;
   }
@@ -114,5 +154,8 @@ nav li a {
     margin-left: auto;
     margin-right: auto;
     display: block;
+  }
+  #about .about-img {
+    width: 150px;
   }
 }
