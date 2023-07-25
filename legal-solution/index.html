@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Legal Solution</title>
+    <!-- tailwind css and daisyui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- config of tailwind css -->
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+            padding: {
+              DEFAULT: "1rem",
+            },
+            screens: {
+              sm: "500px",
+              md: "600px",
+              lg: "900px",
+              xl: "1100px",
+            },
+          },
+          extend: {
+            colors: {
+              "dark-1": "#111111",
+              "dark-2": "#414040",
+              "dark-3": "#707070",
+              "dark-4": "#A0A0A0",
+              "dark-5": "#CFCFCF",
+              "dark-6": "#E7E7E7",
+              "dark-7": "#F3F3F3",
+            },
+          },
+          fontFamily: {
+            "eb-garamond": ["EB Garamond", "serif"],
+            poppins: ["Poppins", "sans-serif"],
+          },
+        },
+      };
+    </script>
+    <style>
+      .btn-pri {
+        background-color: #b68c5a;
+        border-radius: 8px;
+        color: #fff;
+      }
+      .btn-pri:hover {
+        background-color: #b68d5abc;
+      }
+    </style>
+  </head>
+  <body data-theme="light">
+    <header class="container">
+      <!-- navbar section start -->
+      <nav class="navbar py-4">
+        <div class="navbar-start">
+          <a class="cursor-pointer" href="#">
+            <img class="" src="images/logo2.png" alt="site logo" />
+          </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li tabindex="0">
+              <details>
+                <summary>Services</summary>
+                <ul class="p-1 rounded">
+                  <li>
+                    <a href="#">Submenu 1</a>
+                  </li>
+                  <li>
+                    <a href="#">Submenu 2</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li tabindex="1">
+              <details>
+                <summary>Cases</summary>
+                <ul class="p-1 rounded">
+                  <li>
+                    <a href="#">Submenu 1</a>
+                  </li>
+                  <li>
+                    <a href="#">Submenu 2</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li tabindex="2">
+              <details>
+                <summary>Blog</summary>
+                <ul class="p-1 rounded">
+                  <li>
+                    <a href="#">Submenu 1</a>
+                  </li>
+                  <li>
+                    <a href="#">Submenu 2</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li tabindex="3">
+              <details>
+                <summary>Contact Us</summary>
+                <ul class="p-1 rounded">
+                  <li>
+                    <a href="#">Submenu 1</a>
+                  </li>
+                  <li>
+                    <a href="#">Submenu 2</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 -left-[300%] shadow bg-base-100 rounded w-52"
+            >
+              <li>
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <span>Services</span>
+                <ul class="p-2">
+                  <li>
+                    <a href="#">Submenu 1</a>
+                  </li>
+                  <li>
+                    <a href="#">Submenu 2</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span>Cases</span>
+                <ul class="p-2">
+                  <li>
+                    <a href="#">Submenu 1</a>
+                  </li>
+                  <li>
+                    <a href="#">Submenu 2</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span>Blog</span>
+                <ul class="p-2">
+                  <li>
+                    <a href="#">Submenu 1</a>
+                  </li>
+                  <li>
+                    <a href="#">Submenu 2</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span>Contact Us</span>
+                <ul class="p-2">
+                  <li>
+                    <a href="#">Submenu 1</a>
+                  </li>
+                  <li>
+                    <a href="#">Submenu 2</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <button class="btn btn-pri hidden md:block">Free Consultation</button>
+        </div>
+      </nav>
+      <!-- navbar section end -->
+    </header>
+  </body>
+</html>
