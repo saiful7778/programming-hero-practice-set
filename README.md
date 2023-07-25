@@ -6,4 +6,4 @@ G3 architects website live link: [https://saiful7778.github.io/programming-hero-
 
 Tea house website live link: [https://saiful7778.github.io/programming-hero-practice-set/tea-house/](https://saiful7778.github.io/programming-hero-practice-set/tea-house/)
 
-Legale solution website live link: [https://saiful7778.github.io/programming-hero-practice-setlegal-solution](https://saiful7778.github.io/programming-hero-practice-setlegal-solution)
+Legale solution website live link: [https://saiful7778.github.io/programming-hero-practice-set/legal-solution](https://saiful7778.github.io/programming-hero-practice-set/legal-solution)
